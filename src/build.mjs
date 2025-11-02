@@ -33,9 +33,16 @@ export async function build() {
   const entries = await Promise.all(
     filenames.map(async filename => {
       const filepath = path.resolve(ENTRIES_PATH, filename)
-      const lastModified = DateTime.fromISO(
-        await exec(`git -C ${TIL_PATH} log -1 --pretty="format:%cI" "${quot(filepath)}"`)
-      )
+      let lastModified
+      try {
+        // Try to get last modified date from git
+        const gitDate = await exec(`git -C ${TIL_PATH} log -1 --pretty="format:%cI" "${quot(filepath)}"`)
+        lastModified = DateTime.fromISO(gitDate)
+      } catch (error) {
+        // Fall back to file system mtime if git fails
+        const stats = await fs.stat(filepath)
+        lastModified = DateTime.fromJSDate(stats.mtime)
+      }
       const content = await fs.readFile(filepath, 'utf8')
       const markdown = parseMarkdown(content)
       return {

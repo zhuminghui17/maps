@@ -414,3 +414,11 @@ function shaSum(filepath) {
       })
   )
 }
+
+// If this module is run directly, execute the default export
+if (import.meta.url === `file://${process.argv[1]}`) {
+  til(process.argv.slice(2)).catch(error => {
+    if (error) console.error(error)
+    process.exit(1)
+  })
+}
