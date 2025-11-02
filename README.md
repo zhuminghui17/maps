@@ -38,6 +38,23 @@ you would be willing to help factor out reusable parts, open an issue to
 discuss.
 
 
+## Deploy to Vercel
+
+To deploy this site to Vercel:
+
+1. Push your code to GitHub
+2. Go to [Vercel](https://vercel.com) and import your repository
+3. Vercel will automatically detect the build settings from `package.json`
+4. The build command (`npm run build`) and output directory (`dist`) are configured automatically
+
+That's it! Vercel will build and deploy your site.
+
+## Deploy to GitHub Pages
+
+- In [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), set it so you have the settings:
+  - Source: Deploy from a branch (Classic Pages experience)
+  - Branch: `gh-pages`, from the folder `/ (root)`
+
 ## Setup (only works on *nix)
 
 - Install [NodeJS](https://nodejs.org/en/download)
@@ -50,9 +67,6 @@ mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ```
 - Modify the [Config File](./config.mjs) with your own info
-- In [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), set it so you have the settings:
-  - Source: Deploy from a branch (Classic Pages experience)
-  - Branch: `gh-pages`, from the folder `/ (root)`
 
 
 ## License
