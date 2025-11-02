@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "til",
+  "license": "MIT",
+  "scripts": {
+    "build": "./bin/til --build",
+    "preview": "npx serve dist",
+    "install": "mkdir -p \"$HOME/.local/bin\"; ln -sf \"$PWD/bin/til\" \"$HOME/.local/bin/til\""
+  },
+  "prettier": {
+    "semi": false
+  },
+  "dependencies": {
+    "bat": "^0.0.0",
+    "context-eval": "^0.1.0",
+    "fzf": "^0.5.2",
+    "hyperjsx": "^1.0.12",
+    "luxon": "^2.3.0",
+    "mdast-util-mdx": "^1.1.0",
+    "micromark-extension-mdx": "^1.0.0",
+    "node": "^21.2.0",
+    "prettier": "^2.5.1",
+    "remark-comment": "^1.0.0",
+    "remark-frontmatter": "^4.0.1",
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.1",
+    "retext": "^8.1.0",
+    "retext-smartypants": "^5.1.0",
+    "shiki": "^0.10.0",
+    "unified": "^10.1.1",
+    "yaml": "^1.10.2"
+  }
+}
