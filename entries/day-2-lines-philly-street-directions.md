@@ -29,8 +29,10 @@ Two styles (grey and dark) are shown below:
  
 
 ![Philly Street Direction Grey](../assets/philly_street_direction_grey.png)
+[Click here to view high-quality PDF ⬆️](../assets/philly_street_direction_grey.pdf)
 
 ![Philly Street Direction Dark](../assets/philly_street_direction_dark.png)
+[Click here to view high-quality PDF⬆️](../assets/philly_street_direction_dark.pdf)
 
 
 ### References  
