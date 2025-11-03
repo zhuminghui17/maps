@@ -1,5 +1,5 @@
 ---
-title: Day 2 – Lines - Philly Street Directions
+title: Day 2 – Lines – Philly Street Directions
 permalink: day-2-lines-street-directions
 date: 2025-11-02T19:33:12-05:00
 tags:
