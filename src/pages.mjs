@@ -20,13 +20,13 @@ export function Index({ frontmatters, Content }) {
   return (
     h(Path, { value: '/' },
       h(Document,
-        h('title', `Things I\'ve Learned / ${Config.FULL_NAME}`),
+        h('title', `Maps I\'ve Made / ${Config.FULL_NAME}`),
         ...OpenGraph({
           'og:url': canonicalRoot,
-          'og:title': `${Config.FULL_NAME} / til`,
-          'og:description': 'Things I\'ve Learned: brief blurbs on miscellaneous matter.',
+          'og:title': `${Config.FULL_NAME} / maps`,
+          'og:description': 'Maps I\'ve Made.',
           'twitter:card': 'summary',
-          'twitter:title': `${Config.FULL_NAME} / til: brief blurbs on miscellaneous matter.`,
+          'twitter:title': `${Config.FULL_NAME} / maps: maps I\'ve made.`,
           'twitter:creator':  Config.TWITTER_AT,
         }),
         JSONLD({
@@ -77,12 +77,12 @@ export function Feed({ entries }) {
       h('link', { rel: 'self', type: 'application/atom+xml', href: canonicalPath('/feed.xml') }),
       h('link', { rel: 'alternate', type: 'text/html', href: canonicalRoot }),
       h('updated', lastModified.toISO ? lastModified.toISO() : new Date(lastModified).toISOString()),
-      h('title', `${Config.FULL_NAME} / til`),
-      h('subtitle', 'Things I\'ve Learned: brief blurbs on miscellaneous matter.'),
+      h('title', `${Config.FULL_NAME} / maps`),
+      h('subtitle', 'Maps I\'ve Made.'),
       h('icon', canonicalPath('/assets/favicon.png')),
       h('author', h('name', Config.FULL_NAME), h('uri', Config.DOMAIN_ROOT)),
       h('rights', `© ${currentYear()} ${Config.FULL_NAME} ⸱ licensed under CC BY 4.0`),
-      h('generator', { uri: `https://github.com/${Config.GITHUB_USERNAME}/${Config.GITHUB_REPO}` }, 'til'),
+      h('generator', { uri: `https://github.com/${Config.GITHUB_USERNAME}/${Config.GITHUB_REPO}` }, 'maps'),
       entries.map(({ markdown, frontmatter, lastModified }) =>
         h('entry',
           h('id', canonicalPath(`/${frontmatter.permalink}/`)),
@@ -152,7 +152,7 @@ export function Page({ filename, lastModified, frontmatter, markdown, Content, p
         }),
         h('article',
           h('h1',
-            h('a', { href: '../' }, 'til'),
+            h('a', { href: '../' }, 'maps'),
             h('span', frontmatter.title)
           ),
           h(Content, { components }),
@@ -246,7 +246,7 @@ function Attribution({ filename, frontmatter: { permalink, date } }) {
       rel: "cc:attributionURL",
       href: useCanonical()
     },
-      'til'),
+      'maps'),
 
     // time
     ' was created ',
