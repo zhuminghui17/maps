@@ -20,9 +20,10 @@ Maps visualizing **U.S. credit unions**, where each packed circle represents a c
 - **Circle color** indicates **member growth rate** — blue for higher growth, red for lower or negative growth.
 
 ![Member Size Map](../assets/basic.png)
+[Click here to view high-quality PDF ⬆️](../assets/basic.pdf)
 
 ![Growth Rate Map](../assets/growth.png)
-
+[Click here to view high-quality PDF ⬆️](../assets/growth.pdf)
 
 ### References  
 - Tutorial: [How to Make a Cartogram with Packed Circles in R](https://flowingdata.com/2024/04/17/how-to-make-a-cartogram-with-packed-circles-in-r/)  
