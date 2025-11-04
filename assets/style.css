@@ -4,7 +4,7 @@
   --font-ratio: 0.5844907407;
   --ideal-font-size: calc(66vw / (60 * var(--font-ratio)));
   --font-size: clamp(14px, var(--ideal-font-size), 18px);
-  --ideal-col-width: calc(var(--font-size) * 60 * var(--font-ratio));
+  --ideal-col-width: calc(var(--font-size) * 80 * var(--font-ratio));
   --col-width: min(100vw - 4rem, var(--ideal-col-width));
   --gutter: calc((100vw - var(--col-width)) / 2);
 }
