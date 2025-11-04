@@ -1,5 +1,5 @@
 ---
-title: Day 3 - Polygons - Software Developers Prevailing Wages
+title: Day 3 – Polygons – Software Developers Prevailing Wages
 permalink: day-3-polygons-software-developers-prevailing-wages
 date: 2025-11-03T23:10:21-05:00
 tags:
@@ -10,7 +10,7 @@ tags:
   - US
 ---
 
-### Day 3 - Polygons
+### Day 3 – Polygons
 **[Challenge Description](https://30daymapchallenge.com/#:~:text=Challenge%20Classic%3A%20Create%20a%20map%20focused%20on%20area%20features%20(e.g.%2C%20administrative%20regions%2C%20land%20use%2C%20boundaries).%20Use%20fills%2C%20patterns%2C%20and%20choropleth%20techniques.):** Create a map focused on area features (e.g., administrative regions, land use, boundaries). Use fills, patterns, and choropleth techniques.
 
 
