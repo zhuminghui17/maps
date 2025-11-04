@@ -185,6 +185,7 @@ function Document({ children }) {
         h('link', { rel: 'stylesheet', href: useRelPath('/assets/style.css') }),
         h('link', { rel: 'alternate', type: 'application/atom+xml', title: 'Reader Feed', href: canonicalPath('/feed.xml') }),
         h(GTag),
+        h(VercelAnalytics),
       ),
       h('body',
         h('header',
@@ -235,6 +236,15 @@ function GTag() {
       gtag('config', 'UA-61714711-1');
     ` })
   ]
+}
+
+function VercelAnalytics() {
+  return h('script', {
+    innerHTML: `
+    import('https://cdn.jsdelivr.net/npm/@vercel/analytics@1.5.0/+esm')
+      .then(({ inject }) => inject())
+      .catch(err => console.error('Failed to load Vercel Analytics:', err));
+  `, type: 'module' })
 }
 
 function Attribution({ filename, frontmatter: { permalink, date } }) {
