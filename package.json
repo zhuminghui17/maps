@@ -11,6 +11,7 @@
     "semi": false
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "bat": "^0.0.0",
     "context-eval": "^0.1.0",
     "fzf": "^0.5.2",
