@@ -26,7 +26,7 @@ In each image, the left volcano is Fuego covered with grey ash; the right one is
   <img src="../assets/fuego_acatenango_2.png" alt="Fuego and Acatenango 2" width="350" />
 </p>
 
-### Above Fuego and Acatenango
+### About Fuego and Acatenango
 
 Fuego (see [location](https://maps.app.goo.gl/fC5SpR6pc2C8dUzN7) and [images](https://www.google.com/search?sca_esv=7996920a3193b21b&sxsrf=AE3TifNcJWB3BfbILZCYl74RBX5D1z166Q:1762399851813&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeuYzzFkfneXafNx6OMdA4MQRJc_t_TQjwHYrzlkIauOKPY6AGi5WlEHM84Wm0PfFv70IbKvZ_YnHj3eN61I0ViwY4pnH5uK4ilKEYbr10BasAB18Gd26kqtjoHn0TUTLUlGrGq7E_Ejk1GThF6IEOPGrHhu8FQnG8PdAcpqey5cGUAElYQ&q=Volc%C3%A1n+de+Fuego&sa=X&ved=2ahUKEwifkvqIy9yQAxV0FlkFHY68I6AQtKgLegQIERAB&biw=1440&bih=788&dpr=2)) is an active volcano — you can actually see its lava glowing at night.
 
@@ -70,7 +70,7 @@ plot_3d_vista(
 )
 
 render_snapshot(
-  filename = "fuego_acatenango_1_1.png",
+  filename = "fuego_acatenango_1.png",
   clear = TRUE,
   title_text = NULL,
   width = 4000,
@@ -90,7 +90,7 @@ plot_3d_vista(
 )
 
 render_snapshot(
-  filename = "fuego_acatenango_2_1.png",
+  filename = "fuego_acatenango_2.png",
   clear = TRUE,
   title_text = NULL,
   width = 4000,
