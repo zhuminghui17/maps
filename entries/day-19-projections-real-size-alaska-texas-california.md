@@ -10,7 +10,7 @@ tags:
 ---
 
 ### Day 19 – Projections
-**[Challenge Description](https://30daymapchallenge.com/#:~:text=(GIS%20Day)%20Focus%20entirely%20on%20map%20projections.%20Choose%20an%20unusual%20or%20misunderstood%20projection%20to%20highlight%20a%20theme%2C%20or%20visualize%20distortion.%20(See%20xkcd.com/977)):** 	(GIS Day) Focus entirely on map projections. Choose an unusual or misunderstood projection to highlight a theme, or visualize distortion. (See [xkcd.com/977](xkcd.com/977))
+**[Challenge Description](https://30daymapchallenge.com/#:~:text=(GIS%20Day)%20Focus%20entirely%20on%20map%20projections.%20Choose%20an%20unusual%20or%20misunderstood%20projection%20to%20highlight%20a%20theme%2C%20or%20visualize%20distortion.%20(See%20xkcd.com/977)):** 	(GIS Day) Focus entirely on map projections. Choose an unusual or misunderstood projection to highlight a theme, or visualize distortion. (See [xkcd.com/977](https://xkcd.com/977/))
 ### My Submission
 
 **Quick Quiz:** Which US state is the largest?
